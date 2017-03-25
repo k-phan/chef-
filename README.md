@@ -10,18 +10,28 @@ NodeJS web app
 **machine_learning** for recipe generation
 
 ## Task Distribution
-1. Build Frontend
-2. Learn SQL
-3. Web Scraper
-
----------------
-
-### Options for Webscraper:
-**Request** and **Cheerio** |||  
-**Osmosis** |  
-**noodlejs** |  
+1. ~~Build Frontend~~
+2. ~~Learn SQL~~
+3. ~~Web Scraper~~
+4. Machine Learning/ChefBot algo
+5. Integrating SQL to Node App
+6. REST endpoints
 
 
+## npm dependencies
+
+**CuisineScrape.js**
+ - request
+ - cheerio
+ - fs  
+
+**webpage**
+ - express
+ - path
+ - serve-favicon
+
+**chefbot**
+ - lda
 
 #### Inputs
 
