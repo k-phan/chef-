@@ -11,8 +11,8 @@ app.get('/', function (request, response) {
   response.sendFile((path.join(__dirname, '/views/index.html')))
 })
 
-app.get('/test', function (request, response) {
-  response.send('hi')
+app.get('/chefu', function (request, response) {
+  response.send('THIS IS WHAT CHEFU WOULD BE')
 })
 
 app.listen(app.get('port'), function () {
