@@ -1,0 +1,24 @@
+{
+  "name": "chef-",
+  "version": "1.0.0",
+  "description": "Web scraper - Recipes\r mySQL, SQL, SQLite (DB?)\r NodeJS web app\r - Pick one or two basic ingredients\r - Be presented with some basic generated recipe.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kphan95/chef-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kphan95/chef-/issues"
+  },
+  "homepage": "https://github.com/kphan95/chef-#readme",
+  "dependencies": {
+    "express": "^4.15.2",
+    "path": "^0.12.7"
+  }
+}
