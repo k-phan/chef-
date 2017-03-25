@@ -1,4 +1,4 @@
-# Chef_ü_
+# Chefü
 
 Web scraper - Recipes
 mySQL, SQL, SQLite (DB?)
@@ -9,7 +9,7 @@ NodeJS web app
 **Express.js** - Webserver for frontend + REST API
 **machine_learning** for recipe generation
 
-##Task Distribution
+## Task Distribution
 1. Build Frontend
 2. Learn SQL
 3. Web Scraper
@@ -17,9 +17,9 @@ NodeJS web app
 ---------------
 
 ### Options for Webscraper:
-**Request** and **Cheerio** |||
-**Osmosis** |
-**noodlejs** |
+**Request** and **Cheerio** |||  
+**Osmosis** |  
+**noodlejs** |  
 
 
 
