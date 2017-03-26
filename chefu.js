@@ -4,7 +4,9 @@ var brain = require("lda"),
 	school = require("mongodb").MongoClient;
 
 
-var mongoURL = ('mongodb://127.0.0.1:27017/culinarySchool' || process.env.MONGODB_URI)
+var mongoURL = (process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/culinarySchool')
+console.log('mongo uri: ' + process.env.MONGODB_URI)
+console.log('mongo url: ' + mongoURL)
 
 var memories;
 //modüle.exports
