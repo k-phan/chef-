@@ -30,7 +30,7 @@ NodeJS web app
  - path
  - serve-favicon
 
-**chefbot**
+**chefü**
  - lda
 
 #### Inputs
@@ -41,3 +41,4 @@ Cuisine
 #### Outputs
 
 5-10 food ingredients (including what was provided by user) with general ratios in terms of weight
+
