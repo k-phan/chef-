@@ -48,6 +48,12 @@ app.post('/ask_chefu', function (request, response) {
   response.send(JSON.stringify(recipe))
 })
 
+// forgive me friends i need to test playbill project LOL
+app.post('/choreo-test', function (request, response) {
+  console.log(request.body)
+  response.send('IT WORKS!! FUCK YEAH!!')
+})
+
 app.listen(app.get('port'), function () {
   console.log("Sending Chefü to Culinary School...")
   chefu.attendCulinarySchool();
