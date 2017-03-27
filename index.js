@@ -51,7 +51,7 @@ app.post('/ask_chefu', function (request, response) {
 // forgive me friends i need to test playbill project LOL
 app.post('/choreo-test', function (request, response) {
   console.log(request.body)
-  response.send('IT WORKS!! FUCK YEAH!!')
+  response.status(200).send('IT WORKS!! FUCK YEAH!!')
 })
 
 app.listen(app.get('port'), function () {
