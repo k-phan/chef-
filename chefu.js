@@ -24,22 +24,24 @@ module.exports = {
 			{
 				console.log("[info] Using database : " + database.databaseName.toString());
 
-				var collection = database.collection("stuff");
+				var collection = database.collection("recipes");
 				if(collection != null)
 				{
 					readSomeBooks(collection);
 				}
-				database.close();
 			}
 		});
 	},
 	askChefu : function(array){
 		var possibles = [];
+		console.log(memories.length + " : width");
 
 		for(var i = 0; i < memories.length; i++)
 		{
+
 			for(var j = 0; j < memories[i].length; j++)
 			{
+				console.log("height " + i + " : " + memories[i].length);
 				var found = [];
 				//how many items suggested by the user are actually in this generated topic
 				for(var k = 0; k < array.length; k++)
@@ -65,6 +67,11 @@ module.exports = {
 				}
 			}
 		}
+		if(possibles.length == 0)
+		{
+			console.log("Chefu hasn't worked with this ingredient before!");
+			return;
+		}
 
 		//sort in descending order (greatest to least)
 		possibles.sort(function(a,b){
@@ -77,6 +84,7 @@ module.exports = {
 		// {
 
 			//for right now lets just return the most relevant recipe.
+
 		var recipeMemory = memories[possibles[0].index];
 		var recipe = [];
 		for(var i = 0; i < recipeMemory.length; i++)
@@ -101,6 +109,7 @@ module.exports = {
 
 function readSomeBooks(collection)
 {
+	console.log("Creating memories from books...")
 	var books = [];
 	//Get all mongo docs here and push onto books
 	collection.find().toArray(function(err, docs){
@@ -113,10 +122,11 @@ function readSomeBooks(collection)
 			for(var i = 0; i < docs.length; i++)
 			{
 				var list = docs[i].ingredientList.join(" ");
+				console.log(list);
 				books.push(list);
 			}
 		}
 	});
 
-	memories = brain(books, Math.floor(Math.random() * (25-10) + 10), 10);
+	memories = brain(books, 5, 10);
 }
